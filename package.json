@@ -9,6 +9,9 @@
     "test": "eslint src/rules/__tests__",
     "prepublishOnly": "npm run build"
   },
+  "files": [
+    "lib"
+  ],
   "keywords": [
     "eslint",
     "plugin",
