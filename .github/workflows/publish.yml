@@ -19,6 +19,9 @@ jobs:
           node-version: '18' # Use the Node.js version of your choice
           cache: 'npm'
 
+      - name: Authenticate to npm
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+
       - name: Install dependencies
         run: npm install
 
